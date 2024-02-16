@@ -16,6 +16,7 @@ permissions:
 
 jobs:
   automation:
+    if: github.repository == 'dspace/dspace-angular'
     runs-on: ubuntu-latest
     steps:
     # Assign the PR to whomever created it. This is useful for visualizing assignments on project boards

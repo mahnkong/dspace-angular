@@ -25,6 +25,7 @@ on:
 jobs:
   analyze:
     name: Analyze Code
+    if: github.repository == 'dspace/dspace-angular'
     runs-on: ubuntu-latest
     # Limit permissions of this GitHub action. Can only write to security-events
     permissions:
